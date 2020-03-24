@@ -21,7 +21,7 @@ export const MovieProvider = (props) => {
     }
   ])
   return(
-    <MovieContext.Provider value={'Hey this works'}>
+    <MovieContext.Provider value={[movies, setMovies]}>
      {props.children}
     </MovieContext.Provider>
   )
